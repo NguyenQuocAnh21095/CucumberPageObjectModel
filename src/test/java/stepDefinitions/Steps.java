@@ -19,13 +19,17 @@ public class Steps extends Wdm {
     InputStream inputStream = null;
     HomePage homePage;
 
-    @Given("I am in homepage")
-    public void i_am_in_homepage() throws IOException {
+    public Steps() throws IOException {
         inputStream = new FileInputStream("src/main/resources/config.properties");
         prop.load(inputStream);
         initializeTestBaseSetup(prop.getProperty("browser"),prop.getProperty("appUrl"));
         this.driver = getDriver();
+    }
+
+    @Given("I am in homepage")
+    public void i_am_in_homepage() {
         homePage = PageObjectManager.getHomePage(driver);
         homePage.loginToApp(prop.getProperty("username"),prop.getProperty("password"));
     }
+
 }
