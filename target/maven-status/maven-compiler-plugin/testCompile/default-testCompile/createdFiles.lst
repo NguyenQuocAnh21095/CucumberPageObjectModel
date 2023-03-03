@@ -1,0 +1,10 @@
+stepDefinitions\LoginSteps.class
+pageManager\PageObjectManager.class
+pageObject\YourAccountsPage.class
+pageObject\PlaylistsPage.class
+stepDefinitions\CommonSteps.class
+pageObject\SlidesPage.class
+webDriverSetup\Wdm.class
+TestRunner.class
+pageObject\HomePage.class
+pageObject\LoginPage.class
