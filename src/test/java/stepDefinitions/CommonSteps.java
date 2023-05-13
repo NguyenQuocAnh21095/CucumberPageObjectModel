@@ -1,6 +1,7 @@
 package stepDefinitions;
 
 import io.cucumber.java.en.Given;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import pageManager.PageObjectManager;
 import pageObject.HomePage;
@@ -40,6 +41,10 @@ public class CommonSteps extends Wdm {
     public void i_close_2FA_popup(){
         yourAccountsPage = PageObjectManager.getYourAccountsPage(driver);
         yourAccountsPage.close_2FA_popup();
+    }
+    @Given("^I click element (.+)$")
+    public void i_click_element(String xpath){
+        driver.findElement(By.xpath(xpath)).click();
     }
     @Given("I close current browser")
     public void close_current_browser(){
