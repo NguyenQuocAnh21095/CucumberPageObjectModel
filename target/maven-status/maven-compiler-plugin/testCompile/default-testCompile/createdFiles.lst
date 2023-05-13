@@ -3,6 +3,7 @@ pageManager\PageObjectManager.class
 pageObject\YourAccountsPage.class
 pageObject\PlaylistsPage.class
 stepDefinitions\CommonSteps.class
+stepDefinitions\SlidesSteps.class
 pageObject\SlidesPage.class
 webDriverSetup\Wdm.class
 TestRunner.class

@@ -41,4 +41,8 @@ public class CommonSteps extends Wdm {
         yourAccountsPage = PageObjectManager.getYourAccountsPage(driver);
         yourAccountsPage.close_2FA_popup();
     }
+    @Given("I close current browser")
+    public void close_current_browser(){
+        driver.quit();
+    }
 }
