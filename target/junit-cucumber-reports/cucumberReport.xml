@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="26.171">
-    <testcase classname="Create and delete slide" name="Create a slide" time="26.081">
-        <system-out><![CDATA[And I open app with url.....................................................passed
-And I login to app..........................................................passed
-And I close current browser.................................................passed
-]]></system-out>
-    </testcase>
-</testsuite>
