@@ -1,0 +1,9 @@
+Add config.properties file under src/main/resources
+browser=chrome
+appUrl=
+
+username=
+password=
+
+implicitWait=20
+pageLoadTimeout=30
